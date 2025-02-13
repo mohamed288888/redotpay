@@ -72,7 +72,10 @@ export default function Cards() {
 
               <div className="mt-4">
                 <div className="text-sm font-medium text-gray-500">Balance</div>
-                <div className="mt-1">${card.balance.toFixed(2)}</div>
+                <div className="mt-1">
+  ${card.balance ? Number(card.balance).toFixed(2) : "0.00"}
+</div>
+
               </div>
             </div>
 
